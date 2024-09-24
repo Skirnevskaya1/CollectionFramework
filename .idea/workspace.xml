@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Benchmark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyDeque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MySet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MySortedMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MySortedSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ListTests/ArrayListTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ListTests/ComparisonListsTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ListTests/LinkedListTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MapTests/ComparisonMapsTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MapTests/HashMapTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MapTests/LinkedHashMapTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SetTests/ComparisonSetsTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SetTests/HashSetTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SetTests/LinkedHashSetTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2ln3jehHw7DSJYmipIw11d7V8Qs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Benchmark.executor": "Run",
+    "JUnit.ArrayListTests.executor": "Run",
+    "JUnit.ArrayListTests.testRetainAll.executor": "Run",
+    "JUnit.ArrayListTests.testSpliterator.executor": "Run",
+    "JUnit.ComparisonListsTests.executor": "Run",
+    "JUnit.ComparisonListsTests.testAdd.executor": "Run",
+    "JUnit.ComparisonListsTests.testAddAll.executor": "Run",
+    "JUnit.ComparisonListsTests.testAddAllIndex.executor": "Run",
+    "JUnit.ComparisonListsTests.testAddFirst.executor": "Run",
+    "JUnit.ComparisonListsTests.testAddIndex.executor": "Run",
+    "JUnit.ComparisonListsTests.testAddLast.executor": "Run",
+    "JUnit.ComparisonListsTests.testClear.executor": "Run",
+    "JUnit.ComparisonListsTests.testContains.executor": "Run",
+    "JUnit.ComparisonListsTests.testForEach.executor": "Run",
+    "JUnit.ComparisonListsTests.testGet.executor": "Run",
+    "JUnit.ComparisonListsTests.testGetFirst.executor": "Run",
+    "JUnit.ComparisonListsTests.testGetLast.executor": "Run",
+    "JUnit.ComparisonListsTests.testGetSize.executor": "Run",
+    "JUnit.ComparisonListsTests.testIndexOf.executor": "Run",
+    "JUnit.ComparisonListsTests.testIsEmpty.executor": "Run",
+    "JUnit.ComparisonListsTests.testIterator.executor": "Run",
+    "JUnit.ComparisonListsTests.testLastIndexOf.executor": "Run",
+    "JUnit.ComparisonListsTests.testListIterator.executor": "Run",
+    "JUnit.ComparisonListsTests.testListIteratorIndex.executor": "Run",
+    "JUnit.ComparisonListsTests.testListIteratorIndex1.executor": "Run",
+    "JUnit.ComparisonListsTests.testParallelStream.executor": "Run",
+    "JUnit.ComparisonListsTests.testRemove.executor": "Run",
+    "JUnit.ComparisonListsTests.testRemoveAll.executor": "Run",
+    "JUnit.ComparisonListsTests.testRemoveFirst.executor": "Run",
+    "JUnit.ComparisonListsTests.testRemoveIf.executor": "Run",
+    "JUnit.ComparisonListsTests.testRemoveIndex.executor": "Run",
+    "JUnit.ComparisonListsTests.testRemoveLast.executor": "Run",
+    "JUnit.ComparisonListsTests.testReplaceAll.executor": "Run",
+    "JUnit.ComparisonListsTests.testRetainAll.executor": "Run",
+    "JUnit.ComparisonListsTests.testRevers.executor": "Run",
+    "JUnit.ComparisonListsTests.testSet.executor": "Run",
+    "JUnit.ComparisonListsTests.testSort.executor": "Run",
+    "JUnit.ComparisonListsTests.testSpliterator.executor": "Run",
+    "JUnit.ComparisonListsTests.testStream.executor": "Run",
+    "JUnit.ComparisonListsTests.testSubList.executor": "Run",
+    "JUnit.ComparisonListsTests.testToArray.executor": "Run",
+    "JUnit.ComparisonListsTests.testToArrayStream.executor": "Run",
+    "JUnit.ComparisonMapsTests.executor": "Run",
+    "JUnit.ComparisonMapsTests.testCompute.executor": "Run",
+    "JUnit.ComparisonMapsTests.testComputeIfAbsent.executor": "Run",
+    "JUnit.ComparisonMapsTests.testContainsKey.executor": "Run",
+    "JUnit.ComparisonMapsTests.testContainsValue.executor": "Run",
+    "JUnit.ComparisonMapsTests.testGet.executor": "Run",
+    "JUnit.ComparisonMapsTests.testGetOrDefault.executor": "Run",
+    "JUnit.ComparisonMapsTests.testIsEmpty.executor": "Run",
+    "JUnit.ComparisonMapsTests.testKeySet.executor": "Run",
+    "JUnit.ComparisonMapsTests.testMerge.executor": "Run",
+    "JUnit.ComparisonMapsTests.testPut.executor": "Run",
+    "JUnit.ComparisonMapsTests.testPutAll.executor": "Run",
+    "JUnit.ComparisonMapsTests.testPutIfAbsent.executor": "Run",
+    "JUnit.ComparisonMapsTests.testRemove.executor": "Run",
+    "JUnit.ComparisonMapsTests.testReplace.executor": "Run",
+    "JUnit.ComparisonMapsTests.testReplaceAll.executor": "Run",
+    "JUnit.ComparisonMapsTests.testSize.executor": "Run",
+    "JUnit.ComparisonMapsTests.testValues.executor": "Run",
+    "JUnit.ComparisonMapsTests.testСlear.executor": "Run",
+    "JUnit.ComparisonSetsTests.executor": "Run",
+    "JUnit.ComparisonSetsTests.testAdd.executor": "Run",
+    "JUnit.ComparisonSetsTests.testAddAll.executor": "Run",
+    "JUnit.ComparisonSetsTests.testClear.executor": "Run",
+    "JUnit.ComparisonSetsTests.testContains.executor": "Run",
+    "JUnit.ComparisonSetsTests.testForEach.executor": "Run",
+    "JUnit.ComparisonSetsTests.testGetSize.executor": "Run",
+    "JUnit.ComparisonSetsTests.testIsEmpty.executor": "Run",
+    "JUnit.ComparisonSetsTests.testIterator.executor": "Run",
+    "JUnit.ComparisonSetsTests.testParallelStream.executor": "Run",
+    "JUnit.ComparisonSetsTests.testRemove.executor": "Run",
+    "JUnit.ComparisonSetsTests.testRemoveAll.executor": "Run",
+    "JUnit.ComparisonSetsTests.testRemoveIf.executor": "Run",
+    "JUnit.ComparisonSetsTests.testRetainAll.executor": "Run",
+    "JUnit.ComparisonSetsTests.testSpliterator.executor": "Run",
+    "JUnit.ComparisonSetsTests.testStream.executor": "Run",
+    "JUnit.ComparisonSetsTests.testToArray.executor": "Run",
+    "JUnit.ComparisonSetsTests.testToArrayGenerator.executor": "Run",
+    "JUnit.HashMapTests.executor": "Run",
+    "JUnit.HashMapTests.testAdd.executor": "Run",
+    "JUnit.HashMapTests.testCompute.executor": "Run",
+    "JUnit.HashMapTests.testComputeIfAbsent.executor": "Run",
+    "JUnit.HashMapTests.testContainsKey.executor": "Run",
+    "JUnit.HashMapTests.testContainsValue.executor": "Run",
+    "JUnit.HashMapTests.testEntrySet.executor": "Run",
+    "JUnit.HashMapTests.testForEach.executor": "Run",
+    "JUnit.HashMapTests.testGet.executor": "Run",
+    "JUnit.HashMapTests.testGetOrDefault.executor": "Run",
+    "JUnit.HashMapTests.testIsEmpty.executor": "Run",
+    "JUnit.HashMapTests.testKeySet.executor": "Run",
+    "JUnit.HashMapTests.testMerge.executor": "Run",
+    "JUnit.HashMapTests.testPutAll.executor": "Run",
+    "JUnit.HashMapTests.testPutIfAbsent.executor": "Run",
+    "JUnit.HashMapTests.testRemove.executor": "Run",
+    "JUnit.HashMapTests.testReplace.executor": "Run",
+    "JUnit.HashMapTests.testReplaceAll.executor": "Run",
+    "JUnit.HashMapTests.testSize.executor": "Run",
+    "JUnit.HashMapTests.testValues.executor": "Run",
+    "JUnit.HashMapTests.testСlear.executor": "Run",
+    "JUnit.HashSetTests.executor": "Run",
+    "JUnit.HashSetTests.testAdd.executor": "Run",
+    "JUnit.HashSetTests.testAddAll.executor": "Run",
+    "JUnit.HashSetTests.testClear.executor": "Run",
+    "JUnit.HashSetTests.testContains.executor": "Run",
+    "JUnit.HashSetTests.testForEach.executor": "Run",
+    "JUnit.HashSetTests.testGetSize.executor": "Run",
+    "JUnit.HashSetTests.testIsEmpty.executor": "Run",
+    "JUnit.HashSetTests.testIterator.executor": "Run",
+    "JUnit.HashSetTests.testParallelStream.executor": "Run",
+    "JUnit.HashSetTests.testRemove.executor": "Run",
+    "JUnit.HashSetTests.testRemoveIf.executor": "Run",
+    "JUnit.HashSetTests.testSpliterator.executor": "Run",
+    "JUnit.HashSetTests.testStream.executor": "Run",
+    "JUnit.HashSetTests.testToArray.executor": "Run",
+    "JUnit.HashSetTests.testToArrayGenerator.executor": "Run",
+    "JUnit.JdkListsPerformanceTest.executor": "Run",
+    "JUnit.LinkedHashMapTests.executor": "Run",
+    "JUnit.LinkedHashSetTests.executor": "Run",
+    "JUnit.LinkedHashSetTests.testAdd.executor": "Run",
+    "JUnit.LinkedHashSetTests.testAddAll.executor": "Run",
+    "JUnit.LinkedHashSetTests.testClear.executor": "Run",
+    "JUnit.LinkedHashSetTests.testContains.executor": "Run",
+    "JUnit.LinkedHashSetTests.testForEach.executor": "Run",
+    "JUnit.LinkedHashSetTests.testGetSize.executor": "Run",
+    "JUnit.LinkedHashSetTests.testIsEmpty.executor": "Run",
+    "JUnit.LinkedHashSetTests.testIterator.executor": "Run",
+    "JUnit.LinkedHashSetTests.testParallelStream.executor": "Run",
+    "JUnit.LinkedHashSetTests.testRemove.executor": "Run",
+    "JUnit.LinkedHashSetTests.testRemoveAll.executor": "Run",
+    "JUnit.LinkedHashSetTests.testRemoveIf.executor": "Run",
+    "JUnit.LinkedHashSetTests.testRetainAll.executor": "Run",
+    "JUnit.LinkedHashSetTests.testSpliterator.executor": "Run",
+    "JUnit.LinkedHashSetTests.testStream.executor": "Run",
+    "JUnit.LinkedHashSetTests.testToArray.executor": "Run",
+    "JUnit.LinkedHashSetTests.testToArrayGenerator.executor": "Run",
+    "JUnit.LinkedListTests.addLast.executor": "Run",
+    "JUnit.LinkedListTests.executor": "Run",
+    "JUnit.LinkedListTests.test.executor": "Run",
+    "JUnit.LinkedListTests.testAdd.executor": "Run",
+    "JUnit.LinkedListTests.testAdd2.executor": "Run",
+    "JUnit.LinkedListTests.testAddAll.executor": "Run",
+    "JUnit.LinkedListTests.testAddAllIndex.executor": "Run",
+    "JUnit.LinkedListTests.testAddIndex.executor": "Run",
+    "JUnit.LinkedListTests.testAddIndexN.executor": "Run",
+    "JUnit.LinkedListTests.testAddLast.executor": "Run",
+    "JUnit.LinkedListTests.testClear.executor": "Run",
+    "JUnit.LinkedListTests.testContains.executor": "Run",
+    "JUnit.LinkedListTests.testForEach.executor": "Run",
+    "JUnit.LinkedListTests.testGet.executor": "Run",
+    "JUnit.LinkedListTests.testGetFirst.executor": "Run",
+    "JUnit.LinkedListTests.testGetLast.executor": "Run",
+    "JUnit.LinkedListTests.testGetSize.executor": "Run",
+    "JUnit.LinkedListTests.testIndexOf.executor": "Run",
+    "JUnit.LinkedListTests.testIsEmpty.executor": "Run",
+    "JUnit.LinkedListTests.testIterator.executor": "Run",
+    "JUnit.LinkedListTests.testLastIndexOf.executor": "Run",
+    "JUnit.LinkedListTests.testListIterator.executor": "Run",
+    "JUnit.LinkedListTests.testParallelStream.executor": "Run",
+    "JUnit.LinkedListTests.testRemove.executor": "Run",
+    "JUnit.LinkedListTests.testRemoveAll.executor": "Run",
+    "JUnit.LinkedListTests.testRemoveFirst.executor": "Run",
+    "JUnit.LinkedListTests.testRemoveIf.executor": "Run",
+    "JUnit.LinkedListTests.testRemoveIndex.executor": "Run",
+    "JUnit.LinkedListTests.testRemoveLast.executor": "Run",
+    "JUnit.LinkedListTests.testReplaceAll.executor": "Run",
+    "JUnit.LinkedListTests.testRevers.executor": "Run",
+    "JUnit.LinkedListTests.testSet.executor": "Run",
+    "JUnit.LinkedListTests.testSort.executor": "Run",
+    "JUnit.LinkedListTests.testSpliterator.executor": "Run",
+    "JUnit.LinkedListTests.testStream.executor": "Run",
+    "JUnit.LinkedListTests.testSubList.executor": "Run",
+    "JUnit.LinkedListTests.testToArray.executor": "Run",
+    "JUnit.LinkedListTests.testToArrayStream.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "/Users/katerinaskirnevskaya/Documents/collectionFramework/src/main/java/Main.java"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ComparisonMapsTests">
+    <configuration name="ComparisonMapsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collectionFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MapTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="MapTests" />
+      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComparisonMapsTests.testCompute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collectionFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MapTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="MapTests" />
+      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
+      <option name="METHOD_NAME" value="testCompute" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComparisonMapsTests.testComputeIfAbsent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collectionFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MapTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="MapTests" />
+      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
+      <option name="METHOD_NAME" value="testComputeIfAbsent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComparisonMapsTests.testMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collectionFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MapTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="MapTests" />
+      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
+      <option name="METHOD_NAME" value="testMerge" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComparisonMapsTests.testReplace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collectionFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MapTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="MapTests" />
+      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
+      <option name="METHOD_NAME" value="testReplace" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ComparisonMapsTests" />
+        <item itemvalue="JUnit.ComparisonMapsTests.testMerge" />
+        <item itemvalue="JUnit.ComparisonMapsTests.testCompute" />
+        <item itemvalue="JUnit.ComparisonMapsTests.testComputeIfAbsent" />
+        <item itemvalue="JUnit.ComparisonMapsTests.testReplace" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="" />
+      <created>1725802149847</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725802149847</updated>
+    </task>
+    <servers />
+  </component>
+</project>
