@@ -9,7 +9,6 @@ public class Benchmark {
         // Размер тестового списка
         int size = 100000;
 
-        // Создаем списки
         List<Integer> arrayList = new ArrayList<>();
         List<Integer> linkedList = new LinkedList<>();
 

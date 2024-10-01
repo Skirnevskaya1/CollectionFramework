@@ -12,8 +12,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class ArrayListTests {
-    ArrayList<String> arrayList = new ArrayList<>();
-    ArrayList<String> arrayList2 = new ArrayList<>();
+    List<String> arrayList = new ArrayList<>();
+    List<String> arrayList2 = new ArrayList<>();
 
     /*
     Тесты на добавление add()
@@ -22,8 +22,12 @@ public class ArrayListTests {
     @Test
     @Description("Добавление элемента в конец списка")
     void testAdd() {
+        long startTimeArrayList = System.nanoTime();
         arrayList.add("One_Test");
         arrayList.add("Two_Test");
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Добавление элементов " + arrayList.toString() + " в ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(arrayList.toString(), "[One_Test, Two_Test]");
     }
 
@@ -31,9 +35,13 @@ public class ArrayListTests {
     @Test
     @Description("Добавление элемента на указанную позицию")
     void testAddIndex() {
+        long startTimeArrayList = System.nanoTime();
         arrayList.add(0, "Two_Test");
         arrayList.add(1, "Two_Test");
         arrayList.add(2, "Two_Test");
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Добавление элементов на указанную позицию " + arrayList.toString() + " в ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(arrayList.toString(), "[Two_Test, Two_Test, Two_Test]",
                 "Коллекция не соответсвует ожидаемому значению!");
     }
@@ -42,8 +50,12 @@ public class ArrayListTests {
     @Test
     @Description("Добавление элемента в нулевую позицию списка")
     void testAddFirst() {
+        long startTimeArrayList = System.nanoTime();
         arrayList.addFirst("3");
         arrayList.addFirst("1");
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Добавление элементов в нулевую позицию списка " + arrayList.toString() + " в ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(arrayList.toString(), "[1, 3]");
     }
 
@@ -51,8 +63,12 @@ public class ArrayListTests {
     @Test
     @Description("Добавление элемента в конец списка")
     void testAddLast() {
+        long startTimeArrayList = System.nanoTime();
         arrayList.addLast("1");
         arrayList.addLast("5");
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Добавление элементов в конец списка " + arrayList.toString() + " в ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(arrayList.toString(), "[1, 5]");
     }
 
@@ -63,7 +79,11 @@ public class ArrayListTests {
         testAdd();
         arrayList2.add("Three_Test");
         arrayList2.add("Four_Test");
+        long startTimeArrayList = System.nanoTime();
         arrayList.addAll(arrayList2);
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Добавление всех элементов из переданной коллекции в текущую коллекцию " + arrayList.toString() + " ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(arrayList.toString(), "[One_Test, Two_Test, Three_Test, Four_Test]");
     }
 
@@ -73,7 +93,12 @@ public class ArrayListTests {
     void testAddAllIndex() {
         testAdd();
         arrayList2.add("Test");
+        long startTimeArrayList = System.nanoTime();
         arrayList.addAll(1, arrayList2);
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Добавление всех элементов из переданной коллекции в текущую коллекцию на указанную позицию "
+                + arrayList.toString() + " ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(arrayList.toString(), "[One_Test, Test, Two_Test]");
     }
 
@@ -86,7 +111,12 @@ public class ArrayListTests {
     @Description("Удаление элемента по значению из коллекции")
     void testRemove() {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         arrayList.remove("One_Test");
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Удаление элемента по значению из коллекции "
+                + arrayList.toString() + " ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(arrayList.toString(), "[Two_Test]");
     }
 
@@ -95,7 +125,12 @@ public class ArrayListTests {
     @Description("Удаление элемента по указанному индексу")
     void testRemoveIndex() throws IndexOutOfBoundsException {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         arrayList.remove(1);
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Удаление элемента по указанному индексу "
+                + arrayList.toString() + " ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(arrayList.toString(), "[One_Test]");
     }
 
@@ -104,7 +139,12 @@ public class ArrayListTests {
     @Description("Удаление первого элемента в списке")
     void testRemoveFirst() {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         arrayList.removeFirst();
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Удаление первого элемента в списке "
+                + arrayList.toString() + " ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(arrayList.toString(), "[Two_Test]");
     }
 
@@ -113,7 +153,12 @@ public class ArrayListTests {
     @Description("Удаление последнего элемента в списке")
     void testRemoveLast() {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         arrayList.removeLast();
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Удаление последнего элемента в списке "
+                + arrayList.toString() + " ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(arrayList.toString(), "[One_Test]");
     }
 
@@ -122,7 +167,12 @@ public class ArrayListTests {
     @Description("Удаляет элемент Two_Test, для которого предикат возвращает true")
     void testRemoveIf() {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         arrayList.removeIf(n -> n.equals("Two_Test"));
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Удаляет элемент, для которого предикат возвращает true "
+                + arrayList.toString() + " в ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(arrayList.toString(), "[One_Test]");
     }
 
@@ -131,7 +181,12 @@ public class ArrayListTests {
     @Description("Удаление элементов из текущей коллекции, которые содержатся в другой указанной коллекции")
     void testRemoveAll() {
         testAddAll();
+        long startTimeArrayList = System.nanoTime();
         arrayList.removeAll(arrayList2);
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Удаление элементов из текущей коллекции, которые содержатся в другой указанной коллекции "
+                + arrayList.toString() + " в ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(arrayList.toString(), "[One_Test, Two_Test]");
     }
 
@@ -144,7 +199,12 @@ public class ArrayListTests {
     @Description("Получение элемента по индексу")
     void testGet() {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         String a = arrayList.get(1);
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Получение элемента по индексу "
+                + arrayList.toString() + " в ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(a, "Two_Test");
     }
 
@@ -153,7 +213,12 @@ public class ArrayListTests {
     @Description("Получение первого элемента")
     void testGetFirst() {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         String a = arrayList.getFirst();
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Получение первого элемента "
+                + arrayList.toString() + " в ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(a, "One_Test");
     }
 
@@ -162,12 +227,17 @@ public class ArrayListTests {
     @Description("Получение последнего элемента")
     void testGetLast() {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         String a = arrayList.getLast();
+        long endTimeArrayList = System.nanoTime();
+        long durationArrayList = endTimeArrayList - startTimeArrayList;
+        System.out.println("Получение последнего элемента "
+                + arrayList.toString() + " в ArrayList заняло " + durationArrayList + " наносекунд.");
         Assertions.assertEquals(a, "Two_Test");
     }
 
                 /*
-    Тесты на наличие элементов, итерации,     в коллекции
+    Тесты на наличие элементов, итерации в коллекции
      */
 
     @Order(16)
