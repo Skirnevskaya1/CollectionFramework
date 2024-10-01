@@ -4,32 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Benchmark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyDeque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MySet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MySortedMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MySortedSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ListTests/ArrayListTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ListTests/ComparisonListsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ListTests/LinkedListTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MapTests/ComparisonMapsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MapTests/HashMapTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MapTests/LinkedHashMapTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SetTests/ComparisonSetsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SetTests/HashSetTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SetTests/LinkedHashSetTests.java" afterDir="false" />
+    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="collectionFramework">
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Benchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ListTests/ArrayListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ListTests/ArrayListTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ListTests/LinkedListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ListTests/LinkedListTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -59,6 +46,18 @@
   "keyToString": {
     "Application.Benchmark.executor": "Run",
     "JUnit.ArrayListTests.executor": "Run",
+    "JUnit.ArrayListTests.testAdd.executor": "Run",
+    "JUnit.ArrayListTests.testAddAll.executor": "Run",
+    "JUnit.ArrayListTests.testAddAllIndex.executor": "Run",
+    "JUnit.ArrayListTests.testAddFirst.executor": "Run",
+    "JUnit.ArrayListTests.testAddIndex.executor": "Run",
+    "JUnit.ArrayListTests.testAddLast.executor": "Run",
+    "JUnit.ArrayListTests.testGet.executor": "Run",
+    "JUnit.ArrayListTests.testGetLast.executor": "Run",
+    "JUnit.ArrayListTests.testRemove.executor": "Run",
+    "JUnit.ArrayListTests.testRemoveAll.executor": "Run",
+    "JUnit.ArrayListTests.testRemoveIf.executor": "Run",
+    "JUnit.ArrayListTests.testRemoveLast.executor": "Run",
     "JUnit.ArrayListTests.testRetainAll.executor": "Run",
     "JUnit.ArrayListTests.testSpliterator.executor": "Run",
     "JUnit.ComparisonListsTests.executor": "Run",
@@ -200,6 +199,7 @@
     "JUnit.LinkedListTests.testAdd2.executor": "Run",
     "JUnit.LinkedListTests.testAddAll.executor": "Run",
     "JUnit.LinkedListTests.testAddAllIndex.executor": "Run",
+    "JUnit.LinkedListTests.testAddFirst.executor": "Run",
     "JUnit.LinkedListTests.testAddIndex.executor": "Run",
     "JUnit.LinkedListTests.testAddIndexN.executor": "Run",
     "JUnit.LinkedListTests.testAddLast.executor": "Run",
@@ -231,93 +231,102 @@
     "JUnit.LinkedListTests.testSubList.executor": "Run",
     "JUnit.LinkedListTests.testToArray.executor": "Run",
     "JUnit.LinkedListTests.testToArrayStream.executor": "Run",
+    "JUnit.MyListTest.addTest.executor": "Run",
+    "JUnit.MyListTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "1-2-develop",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/Users/katerinaskirnevskaya/Documents/collectionFramework/src/main/java/Main.java"
+    "onboarding.tips.debug.path": "/Users/katerinaskirnevskaya/Documents/collectionFramework/src/main/java/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ComparisonMapsTests">
-    <configuration name="ComparisonMapsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LinkedListTests">
+    <configuration name="LinkedListTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MapTests.*" />
+          <option name="PATTERN" value="ListTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="MapTests" />
-      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
+      <option name="PACKAGE_NAME" value="ListTests" />
+      <option name="MAIN_CLASS_NAME" value="ListTests.LinkedListTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparisonMapsTests.testCompute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedListTests.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MapTests.*" />
+          <option name="PATTERN" value="ListTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="MapTests" />
-      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
-      <option name="METHOD_NAME" value="testCompute" />
+      <option name="PACKAGE_NAME" value="ListTests" />
+      <option name="MAIN_CLASS_NAME" value="ListTests.LinkedListTests" />
+      <option name="METHOD_NAME" value="testAdd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparisonMapsTests.testComputeIfAbsent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedListTests.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MapTests.*" />
+          <option name="PATTERN" value="ListTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="MapTests" />
-      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
-      <option name="METHOD_NAME" value="testComputeIfAbsent" />
+      <option name="PACKAGE_NAME" value="ListTests" />
+      <option name="MAIN_CLASS_NAME" value="ListTests.LinkedListTests" />
+      <option name="METHOD_NAME" value="testGet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparisonMapsTests.testMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedListTests.testGetFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MapTests.*" />
+          <option name="PATTERN" value="ListTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="MapTests" />
-      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
-      <option name="METHOD_NAME" value="testMerge" />
+      <option name="PACKAGE_NAME" value="ListTests" />
+      <option name="MAIN_CLASS_NAME" value="ListTests.LinkedListTests" />
+      <option name="METHOD_NAME" value="testGetFirst" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparisonMapsTests.testReplace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedListTests.testGetLast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MapTests.*" />
+          <option name="PATTERN" value="ListTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="MapTests" />
-      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
-      <option name="METHOD_NAME" value="testReplace" />
+      <option name="PACKAGE_NAME" value="ListTests" />
+      <option name="MAIN_CLASS_NAME" value="ListTests.LinkedListTests" />
+      <option name="METHOD_NAME" value="testGetLast" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -325,11 +334,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ComparisonMapsTests" />
-        <item itemvalue="JUnit.ComparisonMapsTests.testMerge" />
-        <item itemvalue="JUnit.ComparisonMapsTests.testCompute" />
-        <item itemvalue="JUnit.ComparisonMapsTests.testComputeIfAbsent" />
-        <item itemvalue="JUnit.ComparisonMapsTests.testReplace" />
+        <item itemvalue="JUnit.LinkedListTests" />
+        <item itemvalue="JUnit.LinkedListTests.testAdd" />
+        <item itemvalue="JUnit.LinkedListTests.testGetLast" />
+        <item itemvalue="JUnit.LinkedListTests.testGetFirst" />
+        <item itemvalue="JUnit.LinkedListTests.testGet" />
       </list>
     </recent_temporary>
   </component>
@@ -342,6 +351,30 @@
       <option name="presentableId" value="Default" />
       <updated>1725802149847</updated>
     </task>
+    <task id="LOCAL-00001" summary="collectionFramework">
+      <option name="closed" value="true" />
+      <created>1727194943180</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727194943180</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="collectionFramework" />
+    <option name="LAST_COMMIT_MESSAGE" value="collectionFramework" />
   </component>
 </project>
