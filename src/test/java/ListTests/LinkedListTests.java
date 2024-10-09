@@ -20,8 +20,12 @@ public class LinkedListTests {
     @Test
     @Description("Добавление элемента в конец списка")
     void testAdd() {
+        long startTimeArrayList = System.nanoTime();
         linkList.add("One_Test");
         linkList.add("Two_Test");
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Добавление элементов " + linkList.toString() + " в LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(linkList.toString(), "[One_Test, Two_Test]");
     }
 
@@ -29,9 +33,13 @@ public class LinkedListTests {
     @Test
     @Description("Добавление элемента на указанную позицию")
     void testAddIndex() {
+        long startTimeArrayList = System.nanoTime();
         linkList.add(0, "Two_Test");
         linkList.add(1, "Two_Test");
         linkList.add(2, "Two_Test");
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Добавление элементов на указанную позицию " + linkList.toString() + " в LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(linkList.toString(), "[Two_Test, Two_Test, Two_Test]",
                 "Коллекция не соответсвует ожидаемому значению!");
     }
@@ -40,8 +48,12 @@ public class LinkedListTests {
     @Test
     @Description("Добавление элемента в нулевую позицию списка")
     void testAddFirst() {
+        long startTimeArrayList = System.nanoTime();
         linkList.addFirst("3");
         linkList.addFirst("1");
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Добавление элементов в нулевую позицию списка " + linkList.toString() + " в LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(linkList.toString(), "[1, 3]");
     }
 
@@ -49,8 +61,12 @@ public class LinkedListTests {
     @Test
     @Description("Добавление элемента в конец списка")
     void testAddLast() {
+        long startTimeArrayList = System.nanoTime();
         linkList.addLast("1");
         linkList.addLast("5");
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Добавление элементов в конец списка " + linkList.toString() + " в LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(linkList.toString(), "[1, 5]");
     }
 
@@ -61,7 +77,11 @@ public class LinkedListTests {
         testAdd();
         linkList2.add("Three_Test");
         linkList2.add("Four_Test");
+        long startTimeArrayList = System.nanoTime();
         linkList.addAll(linkList2);
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Добавление всех элементов из переданной коллекции в текущую коллекцию " + linkList.toString() + " LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(linkList.toString(), "[One_Test, Two_Test, Three_Test, Four_Test]");
     }
 
@@ -71,7 +91,12 @@ public class LinkedListTests {
     void testAddAllIndex() {
         testAdd();
         linkList2.add("Test");
+        long startTimeArrayList = System.nanoTime();
         linkList.addAll(1, linkList2);
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Добавление всех элементов из переданной коллекции в текущую коллекцию на указанную позицию "
+                + linkList.toString() + " LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(linkList.toString(), "[One_Test, Test, Two_Test]");
     }
 
@@ -84,7 +109,12 @@ public class LinkedListTests {
     @Description("Удаление элемента по значению из коллекции")
     void testRemove() {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         linkList.remove("One_Test");
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Удаление элемента по значению из коллекции "
+                + linkList.toString() + " в LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(linkList.toString(), "[Two_Test]");
     }
 
@@ -93,7 +123,12 @@ public class LinkedListTests {
     @Description("Удаление элемента по указанному индексу")
     void testRemoveIndex() throws IndexOutOfBoundsException {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         linkList.remove(1);
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Удаление элемента по указанному индексу "
+                + linkList.toString() + " в LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(linkList.toString(), "[One_Test]");
     }
 
@@ -102,7 +137,12 @@ public class LinkedListTests {
     @Description("Удаление первого элемента в списке")
     void testRemoveFirst() {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         linkList.removeFirst();
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Удаление первого элемента в списке "
+                + linkList.toString() + " в LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(linkList.toString(), "[Two_Test]");
     }
 
@@ -111,7 +151,12 @@ public class LinkedListTests {
     @Description("Удаление последнего элемента в списке")
     void testRemoveLast() {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         linkList.removeLast();
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Удаление последнего элемента в списке "
+                + linkList.toString() + " в LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(linkList.toString(), "[One_Test]");
     }
 
@@ -120,7 +165,12 @@ public class LinkedListTests {
     @Description("Удаляет элемент Two_Test, для которого предикат возвращает true")
     void testRemoveIf() {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         linkList.removeIf(n -> n.equals("Two_Test"));
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Удаляет элемент, для которого предикат возвращает true "
+                + linkList.toString() + " в LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(linkList.toString(), "[One_Test]");
     }
 
@@ -129,7 +179,12 @@ public class LinkedListTests {
     @Description("Удаление элементов из текущей коллекции, которые содержатся в другой указанной коллекции")
     void testRemoveAll() {
         testAddAll();
+        long startTimeArrayList = System.nanoTime();
         linkList.removeAll(linkList2);
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Удаление элементов из текущей коллекции, которые содержатся в другой указанной коллекции "
+                + linkList.toString() + " в LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(linkList.toString(), "[One_Test, Two_Test]");
     }
 
@@ -142,7 +197,12 @@ public class LinkedListTests {
     @Description("Получение элемента по индексу")
     void testGet() {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         String a = linkList.get(1);
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Получение элемента по индексу "
+                + linkList.toString() + " в LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(a, "Two_Test");
     }
 
@@ -151,7 +211,12 @@ public class LinkedListTests {
     @Description("Получение первого элемента")
     void testGetFirst() {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         String a = linkList.getFirst();
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Получение первого элемента "
+                + linkList.toString() + " в LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(a, "One_Test");
     }
 
@@ -160,7 +225,12 @@ public class LinkedListTests {
     @Description("Получение последнего элемента")
     void testGetLast() {
         testAdd();
+        long startTimeArrayList = System.nanoTime();
         String a = linkList.getLast();
+        long endTimeLinkedList = System.nanoTime();
+        long durationLinkedList = endTimeLinkedList - startTimeArrayList;
+        System.out.println("Получение последнего элемента "
+                + linkList.toString() + " в LinkedList заняло " + durationLinkedList + " наносекунд.");
         Assertions.assertEquals(a, "Two_Test");
     }
 
