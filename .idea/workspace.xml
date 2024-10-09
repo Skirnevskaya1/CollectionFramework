@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="collectionFramework">
-      <change afterPath="$PROJECT_DIR$/src/test/java/MyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MyListTest.java" afterDir="false" />
+    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="fix: &#10;&#10;Добавлены змерение времени для LinkedList и ArrayList; Дописана реализация методов в MyList.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ConcurrentModificationExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyIteratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MySet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MySetTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Benchmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ListTests/ArrayListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ListTests/ArrayListTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ListTests/LinkedListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ListTests/LinkedListTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MySet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="1-2-develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,6 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Benchmark.executor": "Run",
+    "Application.ConcurrentModificationExample.executor": "Run",
     "JUnit.ArrayListTests.executor": "Run",
     "JUnit.ArrayListTests.testAdd.executor": "Run",
     "JUnit.ArrayListTests.testAddAll.executor": "Run",
@@ -231,11 +236,16 @@
     "JUnit.LinkedListTests.testSubList.executor": "Run",
     "JUnit.LinkedListTests.testToArray.executor": "Run",
     "JUnit.LinkedListTests.testToArrayStream.executor": "Run",
+    "JUnit.MyIteratorTest.testIterator.executor": "Run",
     "JUnit.MyListTest.addTest.executor": "Run",
     "JUnit.MyListTest.executor": "Run",
+    "JUnit.MyMapTest.testMap.executor": "Run",
+    "JUnit.MySetTest.executor": "Run",
+    "JUnit.MySetTest.testSet.executor": "Run",
+    "JUnit.MySetTest.testsSet.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "1-2-develop",
+    "git-widget-placeholder": "1-3-develop",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/katerinaskirnevskaya/Documents/collectionFramework/src/main/java/Main.java",
     "project.structure.last.edited": "Modules",
@@ -252,81 +262,48 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedListTests">
-    <configuration name="LinkedListTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.ConcurrentModificationExample">
+    <configuration name="ConcurrentModificationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ConcurrentModificationExample" />
       <module name="collectionFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ListTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ListTests" />
-      <option name="MAIN_CLASS_NAME" value="ListTests.LinkedListTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyIteratorTest.testIterator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collectionFramework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyIteratorTest" />
+      <option name="METHOD_NAME" value="testIterator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyMapTest.testMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collectionFramework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyMapTest" />
+      <option name="METHOD_NAME" value="testMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collectionFramework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MySetTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTests.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MySetTest.testsSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ListTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ListTests" />
-      <option name="MAIN_CLASS_NAME" value="ListTests.LinkedListTests" />
-      <option name="METHOD_NAME" value="testAdd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedListTests.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="collectionFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ListTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ListTests" />
-      <option name="MAIN_CLASS_NAME" value="ListTests.LinkedListTests" />
-      <option name="METHOD_NAME" value="testGet" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedListTests.testGetFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="collectionFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ListTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ListTests" />
-      <option name="MAIN_CLASS_NAME" value="ListTests.LinkedListTests" />
-      <option name="METHOD_NAME" value="testGetFirst" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedListTests.testGetLast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="collectionFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ListTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ListTests" />
-      <option name="MAIN_CLASS_NAME" value="ListTests.LinkedListTests" />
-      <option name="METHOD_NAME" value="testGetLast" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MySetTest" />
+      <option name="METHOD_NAME" value="testsSet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -334,11 +311,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LinkedListTests" />
-        <item itemvalue="JUnit.LinkedListTests.testAdd" />
-        <item itemvalue="JUnit.LinkedListTests.testGetLast" />
-        <item itemvalue="JUnit.LinkedListTests.testGetFirst" />
-        <item itemvalue="JUnit.LinkedListTests.testGet" />
+        <item itemvalue="Application.ConcurrentModificationExample" />
+        <item itemvalue="JUnit.MyIteratorTest.testIterator" />
+        <item itemvalue="JUnit.MyMapTest.testMap" />
+        <item itemvalue="JUnit.MySetTest" />
+        <item itemvalue="JUnit.MySetTest.testsSet" />
       </list>
     </recent_temporary>
   </component>
@@ -359,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727194943180</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix: &#10;&#10;Добавлены змерение времени для LinkedList и ArrayList; Дописана реализация методов в MyList.">
+      <option name="closed" value="true" />
+      <created>1727795102376</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727795102376</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -375,6 +360,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="collectionFramework" />
-    <option name="LAST_COMMIT_MESSAGE" value="collectionFramework" />
+    <MESSAGE value="fix: &#10;&#10;Добавлены змерение времени для LinkedList и ArrayList; Дописана реализация методов в MyList." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: &#10;&#10;Добавлены змерение времени для LinkedList и ArrayList; Дописана реализация методов в MyList." />
   </component>
 </project>

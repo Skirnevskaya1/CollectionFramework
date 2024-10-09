@@ -7,7 +7,7 @@ public class MyListTest {
     MyList<String> myList = new MyList<>();
 
     @Test
-    void addTest() {
+    void testsList() {
         myList.add("One");
         myList.add("Two");
         myList.add("Three");
