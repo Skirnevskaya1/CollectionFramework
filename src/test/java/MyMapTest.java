@@ -3,6 +3,23 @@ import org.junit.jupiter.api.Test;
 public class MyMapTest {
     MyMap<String, Integer> myMap = new MyMap<>();
 
+    MyMap<String, Integer> myMap2 = new MyMap<>();
+
+    @Test
+    void testMapComparison() {
+        myMap.put("one", 1);
+        myMap.put("two", 2);
+        myMap.put("three", 3);
+
+        myMap2.put("one", 1);
+        myMap2.put("two", 2);
+        myMap2.put("three", 3);
+
+        System.out.println("Map1 equals Map2: " + myMap.equals(myMap2));
+        System.out.println("Map1 hashCode: " + myMap.hashCode());
+        System.out.println("Map2 hashCode: " + myMap2.hashCode());
+    }
+
     @Test
     void testMap() {
         myMap.put("one", 1);

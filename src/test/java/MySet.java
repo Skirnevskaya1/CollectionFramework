@@ -16,6 +16,30 @@ public class MySet<T> implements Set<T> {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof MySet)) return false;
+        MySet<?> other = (MySet<?>) o;
+        if (this.size != other.size()) return false;
+        for (int i = 0; i < size; i++) {
+            if (!other.contains(elements[i])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 0;
+        for (int i = 0; i < size; i++) {
+            // Суммируем хеши всех элементов
+            result += (elements[i] != null ? elements[i].hashCode() : 0);
+        }
+        return result;
+    }
+
+    @Override
     public int size() {
         return size;
     }

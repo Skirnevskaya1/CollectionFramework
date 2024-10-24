@@ -6,6 +6,23 @@ import java.util.Spliterator;
 public class MySetTest {
 
     MySet<Integer> mySet = new MySet<>();
+    MySet<Integer> mySet2 = new MySet<>();
+
+
+    @Test
+    void testSetComparison() {
+        mySet.add(1);
+        mySet.add(2);
+        mySet.add(3);
+
+        mySet2.add(1);
+        mySet2.add(2);
+        mySet2.add(3);
+
+        System.out.println("set1 equals set2: " + mySet.equals(mySet2));
+        System.out.println("set1 hashCode: " + mySet.hashCode());
+        System.out.println("set2 hashCode: " + mySet2.hashCode());
+    }
 
     @Test
     void testsSet() {

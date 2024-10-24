@@ -26,6 +26,35 @@ public class MyMap<K, V> implements Map<K, V> {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Map)) return false;
+
+        Map<?, ?> otherMap = (Map<?, ?>) o;
+        if (this.size() != otherMap.size()) return false;
+
+        for (Map.Entry<K, V> entry : this.entrySet()) {
+            K key = entry.getKey();
+            V value = entry.getValue();
+            if (!Objects.equals(value, otherMap.get(key))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 1;
+        for (Map.Entry<K, V> entry : this.entrySet()) {
+            result = 31 * result + Objects.hashCode(entry.getKey());
+            result = 31 * result + Objects.hashCode(entry.getValue());
+            //result += Objects.hashCode(entry.getKey()) ^ Objects.hashCode(entry.getValue());
+        }
+        return result;
+    }
+
+    @Override
     public boolean containsKey(Object key) {
         for (int i = 0; i < size; i++) {
             if (keys[i].equals(key)) {

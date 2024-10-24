@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="fix: &#10;&#10;Добавлены змерение времени для LinkedList и ArrayList; Дописана реализация методов в MyList.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ConcurrentModificationExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MyIteratorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MyMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MyMapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MySet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MySetTest.java" afterDir="false" />
+    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="fix: Дописана реализация методов в MySet, MyMap. Добавлен класс ConcurrentModificationExample.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/LinkedBinaryTreeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MySet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MySortedSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MySortedSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MySet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MySet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MySetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MySetTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +174,8 @@
     "JUnit.HashSetTests.testToArray.executor": "Run",
     "JUnit.HashSetTests.testToArrayGenerator.executor": "Run",
     "JUnit.JdkListsPerformanceTest.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.test.executor": "Run",
     "JUnit.LinkedHashMapTests.executor": "Run",
     "JUnit.LinkedHashSetTests.executor": "Run",
     "JUnit.LinkedHashSetTests.testAdd.executor": "Run",
@@ -239,9 +237,11 @@
     "JUnit.MyIteratorTest.testIterator.executor": "Run",
     "JUnit.MyListTest.addTest.executor": "Run",
     "JUnit.MyListTest.executor": "Run",
+    "JUnit.MyMapTest.testCompareMap.executor": "Run",
     "JUnit.MyMapTest.testMap.executor": "Run",
     "JUnit.MySetTest.executor": "Run",
     "JUnit.MySetTest.testSet.executor": "Run",
+    "JUnit.MySetTest.testSetComparison.executor": "Run",
     "JUnit.MySetTest.testsSet.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -262,7 +262,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConcurrentModificationExample">
+  <component name="RunManager" selected="JUnit.LinkedBinaryTreeTest">
     <configuration name="ConcurrentModificationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ConcurrentModificationExample" />
       <module name="collectionFramework" />
@@ -270,40 +270,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyIteratorTest.testIterator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedBinaryTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyIteratorTest" />
-      <option name="METHOD_NAME" value="testIterator" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyMapTest.testMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="collectionFramework" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyMapTest" />
-      <option name="METHOD_NAME" value="testMap" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MySetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="collectionFramework" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MySetTest" />
+      <option name="MAIN_CLASS_NAME" value="LinkedBinaryTreeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MySetTest.testsSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedBinaryTreeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collectionFramework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LinkedBinaryTreeTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyMapTest.testCompareMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collectionFramework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyMapTest" />
+      <option name="METHOD_NAME" value="testCompareMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySetTest.testSetComparison" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MySetTest" />
-      <option name="METHOD_NAME" value="testsSet" />
+      <option name="METHOD_NAME" value="testSetComparison" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -311,11 +311,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LinkedBinaryTreeTest" />
+        <item itemvalue="JUnit.LinkedBinaryTreeTest.test" />
+        <item itemvalue="JUnit.MySetTest.testSetComparison" />
+        <item itemvalue="JUnit.MyMapTest.testCompareMap" />
         <item itemvalue="Application.ConcurrentModificationExample" />
-        <item itemvalue="JUnit.MyIteratorTest.testIterator" />
-        <item itemvalue="JUnit.MyMapTest.testMap" />
-        <item itemvalue="JUnit.MySetTest" />
-        <item itemvalue="JUnit.MySetTest.testsSet" />
       </list>
     </recent_temporary>
   </component>
@@ -344,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727795102376</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix: Дописана реализация методов в MySet, MyMap. Добавлен класс ConcurrentModificationExample.">
+      <option name="closed" value="true" />
+      <created>1728495403056</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728495403056</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -361,6 +369,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="collectionFramework" />
     <MESSAGE value="fix: &#10;&#10;Добавлены змерение времени для LinkedList и ArrayList; Дописана реализация методов в MyList." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: &#10;&#10;Добавлены змерение времени для LinkedList и ArrayList; Дописана реализация методов в MyList." />
+    <MESSAGE value="fix: Дописана реализация методов в MySet, MyMap. Добавлен класс ConcurrentModificationExample." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Дописана реализация методов в MySet, MyMap. Добавлен класс ConcurrentModificationExample." />
   </component>
 </project>
