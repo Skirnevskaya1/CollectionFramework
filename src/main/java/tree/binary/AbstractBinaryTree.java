@@ -8,17 +8,17 @@ import java.util.Collection;
 public abstract class AbstractBinaryTree<E> extends AbstractTree<E> implements BinaryTree<E> {
     @Override
     public Node<E> sibling(Node<E> n) throws IllegalArgumentException {
-        return null;
+        return null; // TODO: 25.10.2024 djcrgr ------->>> implementation + test
     }
 
     @Override
     public Collection<Node<E>> children(Node<E> n) throws IllegalArgumentException {
-        return null;
+        return null; // TODO: 25.10.2024 djcrgr ------->>> implementation + test
     }
 
     @Override
     public int childrenNumber(Node<E> n) throws IllegalArgumentException {
-        return 0;
+        return 0; // TODO: 25.10.2024 djcrgr ------->>> implementation + test
     }
 
     /**

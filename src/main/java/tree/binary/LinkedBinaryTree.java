@@ -72,7 +72,8 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
     public Node<E> addLeft(Node<E> n, E e) throws IllegalArgumentException {
         NodeImpl<E> node = validate(n);
         if (node.getLeft() != null) {
-            throw new IllegalArgumentException("Левый потомок уже существует");
+            throw new IllegalArgumentException("Левый потомок уже существует"); // TODO: 25.10.2024 djcrgr ------->>>
+            // перебалсировка???
         }
         NodeImpl<E> leftChild = new NodeImpl<>(e, node, null, null);
         node.setLeft(leftChild);
@@ -191,6 +192,7 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
 
     // рекурсия для in-order обхода дерева
     private void inOrder(NodeImpl<E> node, List<E> elements) {
+        // TODO: 25.10.2024 djcrgr ------->>> call super
         if (node != null) {
             inOrder(node.getLeft(), elements);
             elements.add(node.getElement());
@@ -212,6 +214,8 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
 
     // рекурсивный метод для сбора узлов дерева
     private void collectNodes(NodeImpl<E> node, List<Node<E>> nodes) {
+        // TODO: 25.10.2024 djcrgr ------->>> почитать алгоритмы обхода бинарного дерева
+        // в глубину и в ширину + реализовать эти обходы
         if (node != null) {
             nodes.add(node);
             collectNodes(node.getLeft(), nodes);
@@ -230,7 +234,8 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
         NodeImpl<E> n = validate(node);
         return (n.getLeft() != null || n.getRight() != null);
     }
-
+// TODO: 25.10.2024 djcrgr ------->>> to another class file
+    // use lombok fro getters and setters
     public static class NodeImpl<E> implements Node<E> {
         private E element;
         private NodeImpl<E> parent;
