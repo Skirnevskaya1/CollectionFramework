@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/BinarySearchTreeTest.java" afterDir="false" />
+    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.Класс BinarySearchTree.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -355,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729784994041</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.Класс BinarySearchTree.">
+      <option name="closed" value="true" />
+      <created>1729879060751</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729879060751</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -386,6 +393,7 @@
     <MESSAGE value="fix: &#10;&#10;Добавлены змерение времени для LinkedList и ArrayList; Дописана реализация методов в MyList." />
     <MESSAGE value="fix: Дописана реализация методов в MySet, MyMap. Добавлен класс ConcurrentModificationExample." />
     <MESSAGE value="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами." />
+    <MESSAGE value="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.Класс BinarySearchTree." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.Класс BinarySearchTree." />
   </component>
 </project>
