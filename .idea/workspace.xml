@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="fix: Дописана реализация методов в MySet, MyMap. Добавлен класс ConcurrentModificationExample.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/LinkedBinaryTreeTest.java" afterDir="false" />
+    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/BinarySearchTreeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MySortedSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MySortedSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyMapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MySet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MySet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MySetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MySetTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="1-2-develop" />
+        <entry key="$PROJECT_DIR$" value="1-3-develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -245,7 +240,7 @@
     "JUnit.MySetTest.testsSet.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "1-3-develop",
+    "git-widget-placeholder": "1-4-develop",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/katerinaskirnevskaya/Documents/collectionFramework/src/main/java/Main.java",
     "project.structure.last.edited": "Modules",
@@ -352,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728495403056</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.">
+      <option name="closed" value="true" />
+      <created>1729784994041</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729784994041</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -360,7 +363,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="1-4-develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -370,6 +385,7 @@
     <MESSAGE value="collectionFramework" />
     <MESSAGE value="fix: &#10;&#10;Добавлены змерение времени для LinkedList и ArrayList; Дописана реализация методов в MyList." />
     <MESSAGE value="fix: Дописана реализация методов в MySet, MyMap. Добавлен класс ConcurrentModificationExample." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: Дописана реализация методов в MySet, MyMap. Добавлен класс ConcurrentModificationExample." />
+    <MESSAGE value="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами." />
   </component>
 </project>
