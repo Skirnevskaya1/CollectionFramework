@@ -19,6 +19,12 @@ public class NodeImpl<E> implements Node<E> {
         this.parent = parent;
     }
 
+    public NodeImpl(E element, NodeImpl<E> left, NodeImpl<E> right) {
+        this.element = element;
+        this.left = left;
+        this.right = right;
+    }
+
     @Override
     public E getElement() {
         return element;

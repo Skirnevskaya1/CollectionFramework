@@ -76,11 +76,6 @@ public class ArrayBinaryTree<E> extends AbstractBinaryTree<E> {
         return null;
     }
 
-    @Override
-    protected tree.binary.NodeImpl<E> getRoot() {
-        return null;
-    }
-
     protected static class NodeImpl<E> implements Node<E> {
 
         @Override

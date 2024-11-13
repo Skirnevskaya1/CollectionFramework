@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.Класс BinarySearchTree">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tree/binary/NodeImpl.java" afterDir="false" />
+    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="fix: Дописана реализация методов в классах AbstractBinaryTree&lt;E&gt; и LinkedBinaryTree&lt;E&gt;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sort/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sort/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sort/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sort/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sort/TimSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SortsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/search/BinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/search/balanced/BalanceableTree.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tree/binary/AbstractBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/binary/AbstractBinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tree/binary/ArrayBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/binary/ArrayBinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tree/binary/LinkedBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/binary/LinkedBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BinarySearchTreeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tree/binary/NodeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/binary/NodeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LinkedBinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LinkedBinaryTreeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,15 +33,15 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="1-3-develop" />
+        <entry key="$PROJECT_DIR$" value="1-4-develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2ln3jehHw7DSJYmipIw11d7V8Qs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -179,6 +182,12 @@
     "JUnit.JdkListsPerformanceTest.executor": "Run",
     "JUnit.LinkedBinaryTreeTest.executor": "Run",
     "JUnit.LinkedBinaryTreeTest.test.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.testAddLeft.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.testAddRight.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.testRemove.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.testRoot.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.testSet.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.testTraversal.executor": "Run",
     "JUnit.LinkedHashMapTests.executor": "Run",
     "JUnit.LinkedHashSetTests.executor": "Run",
     "JUnit.LinkedHashSetTests.testAdd.executor": "Run",
@@ -246,9 +255,21 @@
     "JUnit.MySetTest.testSet.executor": "Run",
     "JUnit.MySetTest.testSetComparison.executor": "Run",
     "JUnit.MySetTest.testsSet.executor": "Run",
+    "JUnit.SortsTests.executor": "Run",
+    "JUnit.SortsTests.testBubbleSort.executor": "Run",
+    "JUnit.SortsTests.testInsertionSort.executor": "Run",
+    "JUnit.SortsTests.testMergeSort.executor": "Run",
+    "JUnit.SortsTests.testMergeSortArray.executor": "Run",
+    "JUnit.SortsTests.testMergeSortList.executor": "Run",
+    "JUnit.SortsTests.testQuickSort.executor": "Run",
+    "JUnit.SortsTests.testQuickSortArray.executor": "Run",
+    "JUnit.SortsTests.testQuickSortList.executor": "Run",
+    "JUnit.SortsTests.testSafeMergeSortLargeNumbers.executor": "Run",
+    "JUnit.SortsTests.testTimSort.executor": "Run",
+    "JUnit.SortsTests.testTimSortArray.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "1-4-develop",
+    "git-widget-placeholder": "1-5-develop",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/katerinaskirnevskaya/Documents/collectionFramework/src/main/java/Main.java",
     "project.structure.last.edited": "Modules",
@@ -265,48 +286,51 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedBinaryTreeTest">
-    <configuration name="ConcurrentModificationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ConcurrentModificationExample" />
-      <module name="collectionFramework" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedBinaryTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SortsTests.testTimSortArray">
+    <configuration name="SortsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LinkedBinaryTreeTest" />
+      <option name="MAIN_CLASS_NAME" value="SortsTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedBinaryTreeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SortsTests.testMergeSortArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LinkedBinaryTreeTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="SortsTests" />
+      <option name="METHOD_NAME" value="testMergeSortArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyMapTest.testCompareMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SortsTests.testMergeSortList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyMapTest" />
-      <option name="METHOD_NAME" value="testCompareMap" />
+      <option name="MAIN_CLASS_NAME" value="SortsTests" />
+      <option name="METHOD_NAME" value="testMergeSortList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MySetTest.testSetComparison" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SortsTests.testSafeMergeSortLargeNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MySetTest" />
-      <option name="METHOD_NAME" value="testSetComparison" />
+      <option name="MAIN_CLASS_NAME" value="SortsTests" />
+      <option name="METHOD_NAME" value="testSafeMergeSortLargeNumbers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortsTests.testTimSortArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collectionFramework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SortsTests" />
+      <option name="METHOD_NAME" value="testTimSortArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -314,11 +338,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LinkedBinaryTreeTest" />
-        <item itemvalue="JUnit.LinkedBinaryTreeTest.test" />
-        <item itemvalue="JUnit.MySetTest.testSetComparison" />
-        <item itemvalue="JUnit.MyMapTest.testCompareMap" />
-        <item itemvalue="Application.ConcurrentModificationExample" />
+        <item itemvalue="JUnit.SortsTests.testTimSortArray" />
+        <item itemvalue="JUnit.SortsTests" />
+        <item itemvalue="JUnit.SortsTests.testSafeMergeSortLargeNumbers" />
+        <item itemvalue="JUnit.SortsTests.testMergeSortList" />
+        <item itemvalue="JUnit.SortsTests.testMergeSortArray" />
       </list>
     </recent_temporary>
   </component>
@@ -379,7 +403,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729879753909</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix: Дописана реализация методов в классах AbstractBinaryTree&lt;E&gt; и LinkedBinaryTree&lt;E&gt;">
+      <option name="closed" value="true" />
+      <created>1730397090579</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730397090579</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -412,6 +444,7 @@
     <MESSAGE value="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами." />
     <MESSAGE value="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.Класс BinarySearchTree." />
     <MESSAGE value="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.Класс BinarySearchTree" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.Класс BinarySearchTree" />
+    <MESSAGE value="fix: Дописана реализация методов в классах AbstractBinaryTree&lt;E&gt; и LinkedBinaryTree&lt;E&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Дописана реализация методов в классах AbstractBinaryTree&lt;E&gt; и LinkedBinaryTree&lt;E&gt;" />
   </component>
 </project>

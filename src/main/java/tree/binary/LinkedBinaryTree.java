@@ -15,8 +15,9 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
 
     // Хранение корня дерева и размера
     @Getter
-    private NodeImpl<E> root = null;
-    private int size = 0;
+    @Setter
+    protected NodeImpl<E> root = null;
+    protected int size = 0;
 
     // nonpublic utility
 
@@ -210,12 +211,14 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
         return nodes;
     }
 
-    // рекурсивный метод для сбора узлов дерева
-    private void collectNodes(NodeImpl<E> node, List<Node<E>> nodes) {
+    // центрированный обход
+    public void collectNodes(NodeImpl<E> node, List<Node<E>> nodes) {
         if (node == null) return;
-        collectNodes(node.getLeft(), nodes);
-        nodes.add(node);
-        collectNodes(node.getRight(), nodes);
+
+        // Получаем узлы в порядке in-order
+        // добавляем их в переданный список nodes
+        Collection<NodeImpl<E>> inOrderNodes = inOrder();
+        nodes.addAll(inOrderNodes);
     }
 
     //является ли узел внешним

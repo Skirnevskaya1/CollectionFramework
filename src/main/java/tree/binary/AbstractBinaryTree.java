@@ -5,6 +5,8 @@ import tree.Node;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
+import java.util.Stack;
 
 
 public abstract class AbstractBinaryTree<E> extends AbstractTree<E> implements BinaryTree<E> {
@@ -14,7 +16,6 @@ public abstract class AbstractBinaryTree<E> extends AbstractTree<E> implements B
     public Node<E> sibling(Node<E> n) throws IllegalArgumentException {
         NodeImpl<E> node = validate(n);
         NodeImpl<E> parent = node.getParent();
-
         if (parent == null) return null;
         if (n == parent.getLeft()) {
             return parent.getRight();
@@ -54,29 +55,30 @@ public abstract class AbstractBinaryTree<E> extends AbstractTree<E> implements B
         return count;
     }
 
+    protected NodeImpl<E> root;
+
     /**
      * @return an iterable collection of nodes of the tree in inorder
      */
     // Метод inOrder для получения узлов в порядке обхода "in-order"
     public Collection<NodeImpl<E>> inOrder() {
-        Collection<NodeImpl<E>> snapshot = new ArrayList<>();
-        if (getRoot() != null) {
-            inOrderTraversal(getRoot(), snapshot);
-        }
-        return snapshot;
-    }
+        List<NodeImpl<E>> result = new ArrayList<>();
+        Stack<NodeImpl<E>> stack = new Stack<>();
+        NodeImpl<E> current = root;
 
-    // Рекурсивный метод для заполнения коллекции узлов
-    private void inOrderTraversal(NodeImpl<E> node, Collection<NodeImpl<E>> snapshot) {
-        if (node.getLeft() != null) {
-            inOrderTraversal(node.getLeft(), snapshot);
+        while (current != null || !stack.isEmpty()) {
+            // идем к самому левому узлу
+            while (current != null) {
+                stack.push(current);
+                current = current.getLeft();
+            }
+            // обработка узла
+            current = stack.pop();
+            result.add(current);
+            // переход к правому узлу
+            current = current.getRight();
         }
-        snapshot.add(node);
-        if (node.getRight() != null) {
-            inOrderTraversal(node.getRight(), snapshot);
-        }
+        return result;
     }
-
-    protected abstract NodeImpl<E> getRoot();
 
 }
