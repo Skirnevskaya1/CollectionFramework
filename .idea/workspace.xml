@@ -4,32 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Benchmark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyDeque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MySet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MySortedMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MySortedSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ListTests/ArrayListTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ListTests/ComparisonListsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ListTests/LinkedListTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MapTests/ComparisonMapsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MapTests/HashMapTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MapTests/LinkedHashMapTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SetTests/ComparisonSetsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SetTests/HashSetTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SetTests/LinkedHashSetTests.java" afterDir="false" />
+    <list default="true" id="4f5cf3ac-93a5-4bc3-8dda-75a16e28ca30" name="Changes" comment="fix: Дописана реализация методов в классах AbstractBinaryTree&lt;E&gt; и LinkedBinaryTree&lt;E&gt;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sort/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sort/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sort/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sort/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sort/TimSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SortsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tree/binary/AbstractBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/binary/AbstractBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tree/binary/ArrayBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/binary/ArrayBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tree/binary/LinkedBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/binary/LinkedBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tree/binary/NodeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/binary/NodeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LinkedBinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LinkedBinaryTreeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +31,17 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="1-4-develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2ln3jehHw7DSJYmipIw11d7V8Qs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -58,7 +51,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Benchmark.executor": "Run",
+    "Application.ConcurrentModificationExample.executor": "Run",
     "JUnit.ArrayListTests.executor": "Run",
+    "JUnit.ArrayListTests.testAdd.executor": "Run",
+    "JUnit.ArrayListTests.testAddAll.executor": "Run",
+    "JUnit.ArrayListTests.testAddAllIndex.executor": "Run",
+    "JUnit.ArrayListTests.testAddFirst.executor": "Run",
+    "JUnit.ArrayListTests.testAddIndex.executor": "Run",
+    "JUnit.ArrayListTests.testAddLast.executor": "Run",
+    "JUnit.ArrayListTests.testGet.executor": "Run",
+    "JUnit.ArrayListTests.testGetLast.executor": "Run",
+    "JUnit.ArrayListTests.testRemove.executor": "Run",
+    "JUnit.ArrayListTests.testRemoveAll.executor": "Run",
+    "JUnit.ArrayListTests.testRemoveIf.executor": "Run",
+    "JUnit.ArrayListTests.testRemoveLast.executor": "Run",
     "JUnit.ArrayListTests.testRetainAll.executor": "Run",
     "JUnit.ArrayListTests.testSpliterator.executor": "Run",
     "JUnit.ComparisonListsTests.executor": "Run",
@@ -174,6 +180,14 @@
     "JUnit.HashSetTests.testToArray.executor": "Run",
     "JUnit.HashSetTests.testToArrayGenerator.executor": "Run",
     "JUnit.JdkListsPerformanceTest.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.test.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.testAddLeft.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.testAddRight.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.testRemove.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.testRoot.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.testSet.executor": "Run",
+    "JUnit.LinkedBinaryTreeTest.testTraversal.executor": "Run",
     "JUnit.LinkedHashMapTests.executor": "Run",
     "JUnit.LinkedHashSetTests.executor": "Run",
     "JUnit.LinkedHashSetTests.testAdd.executor": "Run",
@@ -200,6 +214,7 @@
     "JUnit.LinkedListTests.testAdd2.executor": "Run",
     "JUnit.LinkedListTests.testAddAll.executor": "Run",
     "JUnit.LinkedListTests.testAddAllIndex.executor": "Run",
+    "JUnit.LinkedListTests.testAddFirst.executor": "Run",
     "JUnit.LinkedListTests.testAddIndex.executor": "Run",
     "JUnit.LinkedListTests.testAddIndexN.executor": "Run",
     "JUnit.LinkedListTests.testAddLast.executor": "Run",
@@ -231,93 +246,91 @@
     "JUnit.LinkedListTests.testSubList.executor": "Run",
     "JUnit.LinkedListTests.testToArray.executor": "Run",
     "JUnit.LinkedListTests.testToArrayStream.executor": "Run",
+    "JUnit.MyIteratorTest.testIterator.executor": "Run",
+    "JUnit.MyListTest.addTest.executor": "Run",
+    "JUnit.MyListTest.executor": "Run",
+    "JUnit.MyMapTest.testCompareMap.executor": "Run",
+    "JUnit.MyMapTest.testMap.executor": "Run",
+    "JUnit.MySetTest.executor": "Run",
+    "JUnit.MySetTest.testSet.executor": "Run",
+    "JUnit.MySetTest.testSetComparison.executor": "Run",
+    "JUnit.MySetTest.testsSet.executor": "Run",
+    "JUnit.SortsTests.executor": "Run",
+    "JUnit.SortsTests.testBubbleSort.executor": "Run",
+    "JUnit.SortsTests.testInsertionSort.executor": "Run",
+    "JUnit.SortsTests.testMergeSort.executor": "Run",
+    "JUnit.SortsTests.testMergeSortArray.executor": "Run",
+    "JUnit.SortsTests.testMergeSortList.executor": "Run",
+    "JUnit.SortsTests.testQuickSort.executor": "Run",
+    "JUnit.SortsTests.testQuickSortArray.executor": "Run",
+    "JUnit.SortsTests.testQuickSortList.executor": "Run",
+    "JUnit.SortsTests.testSafeMergeSortLargeNumbers.executor": "Run",
+    "JUnit.SortsTests.testTimSort.executor": "Run",
+    "JUnit.SortsTests.testTimSortArray.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "1-5-develop",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/Users/katerinaskirnevskaya/Documents/collectionFramework/src/main/java/Main.java"
+    "onboarding.tips.debug.path": "/Users/katerinaskirnevskaya/Documents/collectionFramework/src/main/java/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ComparisonMapsTests">
-    <configuration name="ComparisonMapsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SortsTests.testTimSortArray">
+    <configuration name="SortsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MapTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="MapTests" />
-      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SortsTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparisonMapsTests.testCompute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SortsTests.testMergeSortArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MapTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="MapTests" />
-      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
-      <option name="METHOD_NAME" value="testCompute" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SortsTests" />
+      <option name="METHOD_NAME" value="testMergeSortArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparisonMapsTests.testComputeIfAbsent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SortsTests.testMergeSortList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MapTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="MapTests" />
-      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
-      <option name="METHOD_NAME" value="testComputeIfAbsent" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SortsTests" />
+      <option name="METHOD_NAME" value="testMergeSortList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparisonMapsTests.testMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SortsTests.testSafeMergeSortLargeNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MapTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="MapTests" />
-      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
-      <option name="METHOD_NAME" value="testMerge" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SortsTests" />
+      <option name="METHOD_NAME" value="testSafeMergeSortLargeNumbers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparisonMapsTests.testReplace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SortsTests.testTimSortArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="collectionFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MapTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="MapTests" />
-      <option name="MAIN_CLASS_NAME" value="MapTests.ComparisonMapsTests" />
-      <option name="METHOD_NAME" value="testReplace" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SortsTests" />
+      <option name="METHOD_NAME" value="testTimSortArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -325,11 +338,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ComparisonMapsTests" />
-        <item itemvalue="JUnit.ComparisonMapsTests.testMerge" />
-        <item itemvalue="JUnit.ComparisonMapsTests.testCompute" />
-        <item itemvalue="JUnit.ComparisonMapsTests.testComputeIfAbsent" />
-        <item itemvalue="JUnit.ComparisonMapsTests.testReplace" />
+        <item itemvalue="JUnit.SortsTests.testTimSortArray" />
+        <item itemvalue="JUnit.SortsTests" />
+        <item itemvalue="JUnit.SortsTests.testSafeMergeSortLargeNumbers" />
+        <item itemvalue="JUnit.SortsTests.testMergeSortList" />
+        <item itemvalue="JUnit.SortsTests.testMergeSortArray" />
       </list>
     </recent_temporary>
   </component>
@@ -342,6 +355,96 @@
       <option name="presentableId" value="Default" />
       <updated>1725802149847</updated>
     </task>
+    <task id="LOCAL-00001" summary="collectionFramework">
+      <option name="closed" value="true" />
+      <created>1727194943180</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727194943180</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix: &#10;&#10;Добавлены змерение времени для LinkedList и ArrayList; Дописана реализация методов в MyList.">
+      <option name="closed" value="true" />
+      <created>1727795102376</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727795102376</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix: Дописана реализация методов в MySet, MyMap. Добавлен класс ConcurrentModificationExample.">
+      <option name="closed" value="true" />
+      <created>1728495403056</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728495403056</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.">
+      <option name="closed" value="true" />
+      <created>1729784994041</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729784994041</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.Класс BinarySearchTree.">
+      <option name="closed" value="true" />
+      <created>1729879060751</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729879060751</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.Класс BinarySearchTree">
+      <option name="closed" value="true" />
+      <created>1729879753909</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729879753909</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: Дописана реализация методов в классах AbstractBinaryTree&lt;E&gt; и LinkedBinaryTree&lt;E&gt;">
+      <option name="closed" value="true" />
+      <created>1730397090579</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730397090579</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="1-4-develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="collectionFramework" />
+    <MESSAGE value="fix: &#10;&#10;Добавлены змерение времени для LinkedList и ArrayList; Дописана реализация методов в MyList." />
+    <MESSAGE value="fix: Дописана реализация методов в MySet, MyMap. Добавлен класс ConcurrentModificationExample." />
+    <MESSAGE value="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами." />
+    <MESSAGE value="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.Класс BinarySearchTree." />
+    <MESSAGE value="fix: Дописана реализация методов в MyMap. Добавлен класс LinkedBinaryTree с тестами.Класс BinarySearchTree" />
+    <MESSAGE value="fix: Дописана реализация методов в классах AbstractBinaryTree&lt;E&gt; и LinkedBinaryTree&lt;E&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Дописана реализация методов в классах AbstractBinaryTree&lt;E&gt; и LinkedBinaryTree&lt;E&gt;" />
   </component>
 </project>
